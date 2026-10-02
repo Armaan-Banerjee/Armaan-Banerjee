@@ -1,0 +1,14 @@
+JACKLETT Installation Guide for GitHub Sites
+==========================================
+
+1. Install Jekyll
+-----------------
+
+Install Ruby: https://www.ruby-lang.org/en/install/
+
+Then install Jekyll:
+  ruby -v
+gem install jekyll
+bundle install
+git commit --all
+```

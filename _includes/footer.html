@@ -1,0 +1,9 @@
+<footer class="site-footer">
+  <p class="colophon">© {{ site.time | date: "%Y" }} {{ site.author }}</p>
+  <ul class="elsewhere">
+    {% if site.social.github != nil and site.social.github != '' %}<li><a href="https://github.com/{{ site.social.github }}">GitHub</a></li>{% endif %}
+    {% if site.social.linkedin != nil and site.social.linkedin != '' %}<li><a href="https://www.linkedin.com/in/{{ site.social.linkedin }}/">LinkedIn</a></li>{% endif %}
+    {% if site.social.bluesky != nil and site.social.bluesky != '' %}<li><a href="https://bsky.app/profile/{{ site.social.bluesky }}">Bluesky</a></li>{% endif %}
+    <li><a href="{{ '/feed.xml' | relative_url }}">Feed</a></li>
+  </ul>
+</footer>

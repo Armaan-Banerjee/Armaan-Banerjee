@@ -1,0 +1,8 @@
+<ul class="articles">
+  {% for article in include.articles %}
+    <li>
+      <a href="{{ article.url | relative_url }}">{{ article.title }}</a>
+      <span class="date"><time datetime="{{ article.date | date_to_xmlschema }}">{{ article.date | date: "%-d %B %Y" }}</time></span>
+    </li>
+  {% endfor %}
+</ul>

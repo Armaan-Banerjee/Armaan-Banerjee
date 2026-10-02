@@ -1,0 +1,45 @@
+title: "Armaan Banerjee"
+tagline: "Software, and notes on making it."
+description: "Personal site and writing of Armaan Banerjee."
+author: "Armaan Banerjee"
+email: "banerjee.armaan@gmail.com"
+
+url: "https://armaan-banerjee.github.io"
+baseurl: ""
+
+social:
+  github: "Armaan-Banerjee"
+
+collections:
+  articles:
+    output: true
+    permalink: /articles/:name/
+
+defaults:
+  - scope: { path: "", type: "articles" }
+    values: { layout: "article" }
+  - scope: { path: "" }
+    values: { layout: "page" }
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+sass:
+  style: compressed
+timezone: Asia/Kolkata
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - test.md
+  - _posts/2024-01-01-welcome-to-jekyll.md
+  - project/
+  - posts/
+  - gems/
+  - _includes_test/
+  - _layouts_test/
+  - _site_test/
+  - config_test/
