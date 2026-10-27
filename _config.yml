@@ -14,10 +14,15 @@ collections:
   articles:
     output: true
     permalink: /articles/:name/
+  papers:
+    output: true
+    permalink: /papers/:name/
 
 defaults:
   - scope: { path: "", type: "articles" }
     values: { layout: "article" }
+  - scope: { path: "", type: "papers" }
+    values: { layout: "paper" }
   - scope: { path: "" }
     values: { layout: "page" }
 

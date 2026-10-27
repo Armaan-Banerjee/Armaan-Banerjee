@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<h1>{{ page.title }}</h1>
+
+<p class="date"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time></p>
+
+{% if page.authors or page.paper_url %}
+<p class="paper-meta">
+  {% if page.authors %}{{ page.authors }}{% endif %}
+  {% if page.authors and page.paper_url %} · {% endif %}
+  {% if page.paper_url %}<a href="{{ page.paper_url }}">Read the paper</a>{% endif %}
+</p>
+{% endif %}
+
+{{ content }}
+
+<p class="back"><a href="{{ '/papers/' | relative_url }}">Back to all papers</a></p>
